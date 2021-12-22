@@ -57,20 +57,5 @@ router.post("/", async (req, res) => {
 
 
 
-//get all conv of a user
-
-router.post("/user/getconv", async (req, res) => {
-    const {userId} = req.body
-  try {
-    const conversation = await Conversation.find({
-      members: { $in: [userId] },
-    });
-
-    res.status(200).json({success:true,message:"successful " ,conversation: conversation});
-  } catch (err) {
-    res.status(500).json({success:false, message: "Internal Server Error"});
-  }
-});
-
 
 module.exports = router;

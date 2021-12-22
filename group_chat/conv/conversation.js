@@ -89,25 +89,6 @@ router.post("/addusers", async (req, res) => {
 });
 
 
-//get all conversation
-router.post("/getconvs", async (req, res) => {
-  try {
-    const user = await Users.findOne({
-      _id: {
-        $in: req.body.userId
-      }
-    });
-
-    if(!user){
-      return res.status(400).json({success: false,message:"User not exist!!"});
-    }
-
-    return res.status(200).json({success: true, message:"Success", GroupConversations: user.groupconversations});
-
-  } catch (err) {
-    res.status(500).json(err.message);
-  }
-});
 
 
 module.exports = router;

@@ -75,3 +75,12 @@ Content-Type: application/json
 {
     "userId": "61c2b42177efb03d08b9031f"
 }
+
+###
+
+POST https://fptnetwork.elemarkuspet.repl.co/api/conversation/user/getconv
+Content-Type: application/json
+
+{
+    "userId": "1c271b52b0f4301b735a33d"
+}
