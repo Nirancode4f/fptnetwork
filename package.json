@@ -1,0 +1,25 @@
+{
+  "name": "familiaryoungcomma",
+  "version": "1.0.0",
+  "description": "web api",
+  "main": "index.js",
+  "dependencies": {
+    "argon2": "^0.28.3",
+    "auth": "0.0.9",
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.2",
+    "node": "^17.3.0",
+    "nodemon": "^2.0.15",
+    "routes": "^2.1.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "khaangnguyeen",
+  "license": "ISC"
+}
